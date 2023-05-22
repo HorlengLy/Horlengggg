@@ -24,11 +24,11 @@ module.exports = {
         },
         'RightToLeft':{
           '0%':{
-              transform:'translate(200px,0)',
+              transform:'translateX(200px)',
               opacity:'0'
           },
           '100%':{
-            transform:'translate(0,0)',
+            transform:'translateX(0)',
             opacity:'1'
           }
         },
