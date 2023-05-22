@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../dist/output.css" rel="stylesheet">
+  <title>Hello-World</title>
+  <script defer src="../script.js"></script>
+</head>
+<body class="bg-gray-300">
+
+    <!-- header -->
+  <div class="z-[1000] bg-[#3366FF] flex items-center justify-between lg:justify-around py-2 fixed w-full top-0 shadow-[0px_0px_10px_#fff] px-[20px]">
+      <div class="animate-leftToRight">
+          <span class="font-bold text-[25px] gap-0">
+            <span class="text-[40px] text-[#FF4423]">H</span>ello
+            <span class="text-[40px] text-[#FF4423]">W</span>orld
+          </span>
+      </div>
+      <div id="navbar" class="md:static fixed md:bg-none bg-gradient-to-b from-[#3366FF] to-[#90C60F] top-0 md:w-auto w-[80%] transition-all duration-300 md:py-0 py-14 shadow-[0px_0px_5px_#fff] md:shadow-none right-[-1000px]">
+          <span class="cursor-pointer absolute right-6 top-3 md:hidden" onclick="toggleNav()">
+            <svg id="clost_icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" class="w-[30px] fill-white">
+              <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
+            </svg>
+          </span>
+          <ul class="flex md:gap-5 md:flex-row flex-col md:h-full h-screen animate-RightToLeft">
+              <a href="#home">
+                <li onclick="toggleNav()" class="tracking-widest cursor-pointer transition-all duration-300  md:py-[6px] py-[10px] px-10 md:px-0 text-[16px] md:hover:bg-transparent md:hover:text-[#7ABE0D] font-semibold hover:bg-[#ADC8FF]">
+                  Home
+                </li>
+              </a>
+              <a href="#service">
+                <li  onclick="toggleNav()"  class="tracking-widest cursor-pointer transition-all duration-300 md:py-[6px] py-[10px] px-10 md:px-0 text-[16px] md:hover:bg-transparent md:hover:text-[#7ABE0D] font-semibold hover:bg-[#ADC8FF]">
+                  Service
+                </li>
+              </a>
+              <a href="#skill">
+                <li onclick="toggleNav()" class="tracking-widest cursor-pointer transition-all duration-300 md:py-[6px] py-[10px] px-10 md:px-0 text-[16px] md:hover:bg-transparent md:hover:text-[#7ABE0D] font-semibold hover:bg-[#ADC8FF]">
+                  Skill
+                </li>
+              </a>
+              <a href="#educations">
+                <li onclick="toggleNav()" class="tracking-widest cursor-pointer transition-all duration-300 md:py-[6px] py-[10px] px-10 md:px-0 text-[16px] md:hover:bg-transparent md:hover:text-[#7ABE0D] font-semibold hover:bg-[#ADC8FF]">
+                  Educations
+                </li>
+              </a>
+              <a href="#about">
+                <li onclick="toggleNav()" class="tracking-widest cursor-pointer transition-all duration-300 md:py-[6px] py-[10px] px-10 md:px-0 text-[16px] md:hover:bg-transparent md:hover:text-[#7ABE0D] font-semibold hover:bg-[#ADC8FF]">
+                  About
+                </li>
+              </a>
+              <a href="#contact">
+                <li onclick="toggleNav()" class="tracking-widest cursor-pointer transition-all duration-300 md:py-[6px] py-[10px] px-10 md:px-0 text-[16px] md:hover:bg-transparent md:hover:text-[#7ABE0D] font-semibold hover:bg-[#ADC8FF]">
+                  Contact
+                </li>
+              </a>
+          </ul>
+      </div>
+      <!-- nav icon -->
+      <span class="cursor-pointer md:hidden">
+        <svg onclick="toggleNav()" id="nav_icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-[30px] fill-white">
+          <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+        </svg>
+      </span>
+  </div>
+
+  <!-- home -->
+  <section>
+    <div id="home" class="bg-gradient-to-b from-[#3366FF] via-[#44B923] to-[#90C60F]">
+      <div class="flex md:flex-row flex-col-reverse gap-10 md:w-[90%] lg:w-[80%] w-full mx-auto py-[150px] md:py-[200px]">
+        <div class="md:flex-1 flex flex-col items-center z-0">
+          <!-- text indroduct -->
+          <div class="flex flex-col justify-center text-center">
+              <span data-card class="card text-[50px] animate-leftToRight">
+                Hello Guy!
+              </span>
+              <span data-card class="card text-[30px] animate-RightToLeft">
+                Wellcome to my website
+              </span>
+          </div>
+          <div class="flex overflow-clip gap-3 h-[90px] bg-[#44B923] px-2 sm:px-10 rounded-lg shadow-[0px_10px_20px_#fff] md:mt-5 mt-10">
+            <span data-card class="card text-[60px] tracking-wider text-blue-600 animate-topToButtom">
+              I'm
+            </span>
+            <div data-card class="card pt-7 animate-BottomToTop">
+              <ul>
+                <li class="list h-[80px]">
+                  <span class="py-1 text relative text-[35px] font-semibold after:content-[''] after:absolute after:h-full after:w-full after:border-l-4 after:left-0 after:bg-[#44B923]">
+                    Horlenggg
+                  </span>
+                </li>
+                <li class="list h-[80px]">
+                  <span class="py-1 text relative text-[33px] sm:text-[35px] font-semibold after:content-[''] after:absolute after:h-full after:w-full after:border-l-4 after:left-0 after:bg-[#44B923]">
+                    Web Developer
+                  </span>
+                </li>
+                <li class="list h-[80px]">
+                  <span class="py-1 text relative text-[35px] font-semibold after:content-[''] after:absolute after:h-full after:w-full after:border-l-4 after:left-0 after:bg-[#44B923]">
+                    Freelancer
+                  </span>
+                </li>
+                <li class="list h-[80px]">
+                  <span class="py-1 text relative text-[35px] font-semibold after:content-[''] after:absolute after:h-full after:w-full after:border-l-4 after:left-0 after:bg-[#44B923]">
+                    Designer
+                  </span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- button -->
+          <div class="flex gap-5 mt-28 md:mt-10">
+            <a href="../img/Web.pdf" download>
+              <button data-card class="card animate-leftToRight py-3 w-[150px] rounded-lg bg-gradient-to-r text-blue-400 from-[#A9EC5C] to-[#D6E4FF] hover:shadow-[0px_0px_20px_#fff] shadow-[0px_5px_20px_#82E02A] transition-all duration-200">
+                Download CV
+              </button>
+            </a>
+            <a href="#service">
+              <button data-card class="card animate-RightToLeft py-3 w-[150px] rounded-lg bg-gradient-to-r text-blue-400 from-[#A9EC5C] to-[#D6E4FF] hover:shadow-[0px_0px_20px_#fff] shadow-[0px_5px_20px_#82E02A] transition-all duration-200">
+                Service
+              </button>
+            </a>
+          </div>
+        </div>
+        <div  data-card class="card md:flex-1 flex justify-center animate-BottomToTop">
+            <!-- profile picture-->
+            <div class="rounded-[50%] bg-[#B3DFFF] md:w-[500px] md:h-[500px] overflow-clip shadow-[0px_0px_30px_#fff]">
+                <img src="../img/self.png" alt="" class="w-full h-full hover:scale-150 cursor-zoom-in transition-all duration-300">
+            </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- service -->
+  <section>
+    <div id="service" class="bg-gradient-to-b from-[#90C60F] to-[#3366FF] pt-[100px]">
+      <div class="w-[96%] sm:w-[90%] lg:w-[80%] mx-auto">
+        <h1 data-title class="underline text-[50px] text-[#fff] flex justify-center uppercase font-extrabold tracking-widest">
+          Service
+        </h1>
+  
+        <!-- card -->
+        <div class="grid md:grid-cols-2 gap-10 mt-10">
+          <div data-card class="card w-fit shadow-[0px_0px_10px_#fff] rounded">
+            <div>
+              <img src="../img/Freelancer.png" alt="" class="w-[75%] mx-auto mt-10 hover:scale-125 transition-all duration-300 cursor-zoom-in">
+            </div>
+            <div>
+              <h1 class="text-[30px] text-center font-bold mt-10">Website Creator</h1>
+              <p class="py-5 px-10 break-all text-sm indent-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officiis fugit odit ea hic officia voluptates dicta quisquam sint perferendis quae facilis ipsum reiciendis, nobis optio minima vitae voluptas nam?
+              </p>
+            </div>
+          </div>
+  
+          <!-- card2 -->
+          
+          <div data-card class="card w-fit shadow-[0px_0px_10px_#fff] rounded">
+            <div>
+              <img src="../img/main.png" alt="" class="w-[50%] mx-auto hover:scale-125 transition-all duration-300 cursor-zoom-in">
+            </div>
+            <div>
+              <h1 class="text-[30px] text-center font-bold">Website Maitainence</h1>
+              <p class="py-5 px-10 break-all text-sm indent-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officiis fugit odit ea hic officia voluptates dicta quisquam sint perferendis quae facilis ipsum reiciendis, nobis optio minima vitae voluptas nam?
+              </p>
+            </div>
+          </div>
+          <!-- 3 -->
+          <div data-card class="card w-fit shadow-[0px_0px_10px_#fff] rounded">
+            <div>
+              <img src="../img/Freelancer.png" alt="" class="w-[75%] mx-auto mt-10 hover:scale-125 transition-all duration-300 cursor-zoom-in">
+            </div>
+            <div>
+              <h1 class="text-[30px] text-center font-bold mt-10">Freelancer</h1>
+              <p class="py-5 px-10 break-all text-sm indent-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officiis fugit odit ea hic officia voluptates dicta quisquam sint perferendis quae facilis ipsum reiciendis, nobis optio minima vitae voluptas nam?
+              </p>
+            </div>
+          </div>
+  
+          <!-- card 4-->
+          
+          <div data-card class="card w-fit shadow-[0px_0px_10px_#fff] rounded">
+            <div>
+              <img src="../img/main.png" alt="" class="w-[50%] mx-auto hover:scale-125 transition-all duration-300 cursor-zoom-in">
+            </div>
+            <div>
+              <h1 class="text-[30px] text-center font-bold">Others</h1>
+              <p class="py-5 px-10 break-all text-sm indent-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore officiis fugit odit ea hic officia voluptates dicta quisquam sint perferendis quae facilis ipsum reiciendis, nobis optio minima vitae voluptas nam?
+              </p>
+            </div>
+          </div>
+          
+  
+        </div>
+        
+        
+      </div>
+    </div>
+  </section>
+
+  <!-- skill -->
+  <section>
+      <div id="skill" class="bg-gradient-to-b from-[#3366FF] to-[#EF68BE] pt-[100px]">
+        <div class="w-[96%] sm:w-[90%] lg:w-[80%] mx-auto">
+          <h1 data-title class="underline text-[50px] text-[#fff] flex justify-center uppercase font-extrabold tracking-widest">
+            skill
+          </h1>
+          <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-5 mt-10">
+            <!-- card -->
+            <div data-card class="card shadow-[0px_0px_10px_#fff] p-5 rounded-lg">
+              <img src="../img/HTML.png" alt="" class="w-[35%] mx-auto hover:scale-110 transition-all duration-300">
+              <h1 class="font-bold text-[25px] text-center mt-5">
+                HTML
+              </h1>
+              <p class="break-all text-xs indent-5 mt-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae iure, minima voluptate molestias quasi ipsam unde nisi dolorem neque maiores, veniam architecto eos quas ipsum illo nemo? Voluptatum, eligendi vel?
+                Suscipit repellat nostrum saepe officia ratione, iusto praesentium? Odit doloremque, sequi exercitationem architecto doloribus officiis repellendus mollitia iusto ea corrupti modi rem, repellat numquam cupiditate molestiae pariatur repudiandae est nam!
+              </p>  
+            </div>
+            <!-- 2 -->
+            <div data-card class="card shadow-[0px_0px_10px_#fff] p-5 rounded-lg">
+              <img src="../img/css.png" alt="" class="w-[40%] mx-auto hover:scale-110 transition-all duration-300">
+              <h1 class="font-bold text-[25px] text-center mt-5">
+                CSS
+              </h1>
+              <p class="break-all text-xs indent-5 mt-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima fugiat corporis tenetur? Rem et omnis atque dolor deleniti debitis optio eligendi sapiente asperiores nemo, soluta, repellat unde! Et, temporibus in!
+                Vitae repellat maiores quod labore saepe incidunt veniam, quia enim architecto natus assumenda temporibus expedita, et accusantium debitis id fugiat magnam optio voluptatum inventore. Saepe est tenetur provident blanditiis molestiae.
+              </p>  
+            </div>
+            <!-- 3 -->
+            <div data-card class="card shadow-[0px_0px_10px_#fff] p-5 rounded-lg">
+              <img src="../img/Js.png" alt="" class="w-[40%] mx-auto hover:scale-110 transition-all duration-300">
+              <h1 class="font-bold text-[25px] text-center mt-5">
+                JAVASCRIPTS
+              </h1>
+              <p class="break-all text-xs indent-5 mt-5">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor laborum cumque laudantium error! Placeat deleniti, impedit consectetur quo nihil magnam perspiciatis minima suscipit, repellat, repudiandae et! Iusto distinctio vel laudantium.
+                Tenetur voluptatibus dolor numquam, atque similique accusamus quia. Sequi debitis quisquam dolore, eveniet corporis hic ratione asperiores, aperiam earum placeat maxime deserunt minus ipsum nam temporibus. Optio alias officiis sint?
+              </p>  
+            </div>
+            <!-- 4 -->
+            <div data-card class="card shadow-[0px_0px_10px_#fff] p-5 rounded-lg">
+              <img src="../img/Tailwind.png" alt="" class="w-[40%] mx-auto hover:scale-110 transition-all duration-300">
+              <h1 class="font-bold text-[25px] text-center mt-5">
+                TAILWIND-CSS
+              </h1>
+              <p class="break-all text-xs indent-5 mt-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum officia in sequi voluptates? Amet earum qui minima pariatur temporibus facere adipisci veritatis quas id, enim esse, soluta ut! Aliquam, inventore.
+                Repellendus fugiat temporibus officiis voluptas odio dignissimos omnis veritatis voluptatem, iste odit accusamus alias consectetur molestias maxime error vitae ab modi dicta unde aspernatur quo, autem dolore dolores facilis? Iste. 
+              </p>  
+            </div>
+            <!-- 5 -->
+            <div data-card class="card shadow-[0px_0px_10px_#fff] p-5 rounded-lg">
+              <img src="../img/React.png" alt="" class="w-[40%] mx-auto hover:scale-110 transition-all duration-300">
+              <h1 class="font-bold text-[25px] text-center mt-5">
+                REACT-JS
+              </h1>
+              <p class="break-all text-xs indent-5 mt-5">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo atque eligendi doloribus non corrupti ad fugiat hic eaque blanditiis laudantium veniam dignissimos nostrum, ipsam et a reprehenderit tempora officia aliquam?
+                Laboriosam, enim in recusandae distinctio omnis aperiam. Sapiente odio, ab et commodi maxime quidem. Aliquam, beatae id sequi quae error corrupti praesentium voluptate, dolorum aspernatur minima, delectus blanditiis ad animi.
+              </p>  
+            </div>
+            <!-- 6 -->
+            <div data-card class="card shadow-[0px_0px_10px_#fff] p-5 rounded-lg">
+              <img src="../img/Vue.png" alt="" class="w-[40%] mx-auto hover:scale-110 transition-all duration-300">
+              <h1 class="font-bold text-[25px] text-center mt-5">
+                VUE-JS
+              </h1>
+              <p class="break-all text-xs indent-5 mt-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos aut, non natus facilis nam ex deleniti quam aperiam ipsum odit totam suscipit ab pariatur corporis est, incidunt, optio quas voluptatem?
+                Ab voluptatem voluptas numquam eum. Neque hic aliquid iusto laudantium numquam sit tenetur commodi saepe rem corrupti maxime autem ratione minus omnis repudiandae aperiam error rerum necessitatibus, praesentium consectetur laboriosam.
+              </p>  
+            </div>
+            <!-- 7 -->
+            <div data-card class="card shadow-[0px_0px_10px_#fff] p-5 rounded-lg">
+              <img src="../img/node.png" alt="" class="w-[40%] mx-auto hover:scale-110 transition-all duration-300">
+              <h1 class="font-bold text-[25px] text-center mt-5">
+                Node/Express-JS
+              </h1>
+              <p class="break-all text-xs indent-5 mt-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, incidunt quasi reiciendis repellendus minima fugiat aspernatur excepturi ad unde placeat vel non beatae veniam, quam eveniet quos molestiae soluta ipsa!
+                Perferendis autem atque sint ratione dignissimos necessitatibus nisi consectetur est voluptatibus doloribus unde harum veritatis saepe quam tempore, modi ipsum porro error. Commodi tempora facilis recusandae corporis, distinctio rerum quidem.
+              </p>  
+            </div>
+            <!-- 8 -->
+            <div data-card class="card shadow-[0px_0px_10px_#fff] p-5 rounded-lg">
+              <img src="../img/python.png" alt="" class="w-[40%] mx-auto hover:scale-110 transition-all duration-300">
+              <h1 class="font-bold text-[25px] text-center mt-5">
+                PYTHON-FLASK
+              </h1>
+              <p class="break-all text-xs indent-5 mt-5">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos repudiandae, consectetur consequuntur modi harum ratione. Odit ad consequuntur blanditiis soluta. Fuga animi officia voluptatum quae numquam et eaque porro eum.
+                Quam nam totam, libero doloremque ad laudantium ipsam omnis eveniet? Exercitationem autem ad dolore totam magni at, cupiditate accusamus repudiandae repellendus. Atque nihil officia deleniti harum aspernatur iste rem molestias!
+              </p>  
+            </div>
+            <!-- 9 -->
+            <div data-card class="card shadow-[0px_0px_10px_#fff] p-5 rounded-lg">
+              <img src="../img/C++.png" alt="" class="w-[40%] mx-auto hover:scale-110 transition-all duration-300">
+              <h1 class="font-bold text-[25px] text-center mt-5">
+                C/C++
+              </h1>
+              <p class="break-all text-xs indent-5 mt-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium veniam nam eos deleniti, itaque dolore exercitationem dignissimos eligendi laboriosam nobis officiis ab pariatur distinctio numquam quibusdam neque atque sit sint!
+                Vel tenetur magnam magni facilis amet reprehenderit cumque autem ab incidunt aliquid cum totam provident consequatur doloremque sunt, veniam nesciunt, recusandae quaerat hic optio libero culpa asperiores dicta? Veritatis, exercitationem. 
+              </p>  
+            </div>
+            <!-- 10 -->
+            <div data-card class="card shadow-[0px_0px_10px_#fff] p-5 rounded-lg">
+              <img src="../img/Mongo.png" alt="" class="w-[40%] mx-auto hover:scale-110 transition-all duration-300">
+              <h1 class="font-bold text-[25px] text-center mt-5">
+                MONGODB
+              </h1>
+              <p class="break-all text-xs indent-5 mt-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero nulla alias dolorum necessitatibus obcaecati aspernatur blanditiis repellendus, amet est deserunt vitae maxime, nesciunt ad rem voluptates, provident quia consectetur ipsa?
+                Officiis, totam magnam culpa alias ipsa doloremque eos. Nesciunt aspernatur numquam esse exercitationem voluptates, assumenda distinctio nobis, quod, blanditiis ducimus culpa eius iusto natus mollitia! Ut placeat aut totam odio!
+              </p>  
+            </div>
+            <!-- 11 -->
+            <div data-card class="card shadow-[0px_0px_10px_#fff] p-5 rounded-lg">
+              <img src="../img/mysql.png" alt="" class="w-[40%] mx-auto hover:scale-110 transition-all duration-300">
+              <h1 class="font-bold text-[25px] text-center mt-5">
+                MYSQL
+              </h1>
+              <p class="break-all text-xs indent-5 mt-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae vero id sint ad accusamus magni perspiciatis amet alias. Explicabo qui assumenda voluptatibus ut ipsum quae repudiandae earum distinctio aliquam doloremque.
+                Natus expedita dignissimos voluptate maxime cum vero quas non veniam quidem. Tenetur error perferendis quasi maiores quos magnam? Quam, deserunt harum. Sit consequuntur soluta cupiditate ipsam a unde. Debitis, eligendi.
+              </p>  
+            </div>
+            <!-- 12 -->
+            <div data-card class="card shadow-[0px_0px_10px_#fff] p-5 rounded-lg">
+              <img src="../img/git-github.png" alt="" class="w-[40%] mx-auto hover:scale-110 transition-all duration-300">
+              <h1 class="font-bold text-[25px] text-center mt-5">
+                GIT/GITHUB
+              </h1>
+              <p class="break-all text-xs indent-5 mt-5">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates voluptatum error soluta laboriosam, et, aspernatur minima minus similique id vel totam. Quod eveniet fugiat repellendus corporis explicabo, eius quisquam praesentium.
+                Nesciunt repellendus animi sapiente minima voluptatem quasi provident dicta odio nobis ea iure voluptatum odit cumque accusantium, labore accusamus cum corrupti eaque beatae. Sit, in eligendi cupiditate ratione veritatis eos.
+              </p>  
+            </div>
+          </div>
+        </div>
+      </div>
+  </section>
+
+  <!-- educations -->
+
+  <section>
+    <div id="educations" class="bg-gradient-to-b from-[#EF68BE] to-[#6690FF] pt-[100px]">
+      <div class="w-[96%] sm:w-[90%] lg:w-[80%] mx-auto">
+        <h1 data-title class="underline text-[40px] sm:text-[50px] text-[#fff] flex justify-center uppercase font-extrabold tracking-widest">
+          educations
+        </h1>
+        <div class="grid lg:grid-cols-3 sm:grid-cols-2 gap-5 mt-10">
+          <!-- card 1-->
+          <div data-card class="card shadow-[0px_0px_10px_#fff] p-5 rounded-lg">
+            <img src="../img/primary.png" alt="" class="w-[80%] h-[170px] mx-auto hover:scale-110 transition-all duration-300">
+            <h1 class="font-bold text-[25px] text-center mt-5">
+              Primary School
+            </h1>
+            <p class="break-all text-xs indent-5 mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolorum fugiat assumenda dolor quod quam id! Veniam, obcaecati. Odit eos id modi magni blanditiis molestiae tempora illum itaque error voluptatum!
+              Sint placeat veritatis, harum nulla rem neque odio facilis recusandae ipsa laboriosam? Praesentium nemo, eligendi cum incidunt tenetur earum. Corrupti delectus vel qui dicta fugit praesentium aspernatur accusamus excepturi reprehenderit.
+              Voluptatum eligendi totam voluptate provident vero, repellat magnam commodi excepturi animi alias, earum asperiores. Animi fuga odio impedit nam nisi beatae quibusdam laborum numquam voluptatem quaerat? Iste consequatur perferendis unde!
+            </p>  
+          </div>
+          <!-- 2 -->
+          <div data-card class="card shadow-[0px_0px_10px_#fff] p-5 rounded-lg">
+            <img src="../img/secondary.png" alt="" class="w-[80%] h-[170px] mx-auto hover:scale-110 transition-all duration-300">
+            <h1 class="font-bold text-[25px] text-center mt-5">
+              Secondary School
+            </h1>
+            <p class="break-all text-xs indent-5 mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolorum fugiat assumenda dolor quod quam id! Veniam, obcaecati. Odit eos id modi magni blanditiis molestiae tempora illum itaque error voluptatum!
+              Sint placeat veritatis, harum nulla rem neque odio facilis recusandae ipsa laboriosam? Praesentium nemo, eligendi cum incidunt tenetur earum. Corrupti delectus vel qui dicta fugit praesentium aspernatur accusamus excepturi reprehenderit.
+              Voluptatum eligendi totam voluptate provident vero, repellat magnam commodi excepturi animi alias, earum asperiores. Animi fuga odio impedit nam nisi beatae quibusdam laborum numquam voluptatem quaerat? Iste consequatur perferendis unde! 
+            </p>  
+          </div>
+          <!-- 3 -->
+          <div data-card class="card shadow-[0px_0px_10px_#fff] p-5 rounded-lg">
+            <img src="../img/hightSchool.png" alt="" class="w-[80%] h-[170px] mx-auto hover:scale-110 transition-all duration-300">
+            <h1 class="font-bold text-[25px] text-center mt-5">
+              Hight School
+            </h1>
+            <p class="break-all text-xs indent-5 mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolorum fugiat assumenda dolor quod quam id! Veniam, obcaecati. Odit eos id modi magni blanditiis molestiae tempora illum itaque error voluptatum!
+              Sint placeat veritatis, harum nulla rem neque odio facilis recusandae ipsa laboriosam? Praesentium nemo, eligendi cum incidunt tenetur earum. Corrupti delectus vel qui dicta fugit praesentium aspernatur accusamus excepturi reprehenderit.
+              Voluptatum eligendi totam voluptate provident vero, repellat magnam commodi excepturi animi alias, earum asperiores. Animi fuga odio impedit nam nisi beatae quibusdam laborum numquam voluptatem quaerat? Iste consequatur perferendis unde!
+            </p>  
+          </div>
+          <!-- 4 -->
+          <div data-card class="card shadow-[0px_0px_10px_#fff] p-5 rounded-lg">
+            <img src="../img/university.png" alt="" class="w-[80%] h-[170px] mx-auto hover:scale-110 transition-all duration-300">
+            <h1 class="font-bold text-[25px] text-center mt-5">
+              Royal University Of Phnom Penh
+            </h1>
+            <p class="break-all text-xs indent-5 mt-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, dolorum fugiat assumenda dolor quod quam id! Veniam, obcaecati. Odit eos id modi magni blanditiis molestiae tempora illum itaque error voluptatum!
+              Sint placeat veritatis, harum nulla rem neque odio facilis recusandae ipsa laboriosam? Praesentium nemo, eligendi cum incidunt tenetur earum. Corrupti delectus vel qui dicta fugit praesentium aspernatur accusamus excepturi reprehenderit.
+            </p>  
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    
+  <!-- about -->
+  <section>
+    <div id="about" class="bg-gradient-to-b from-[#6690FF] to-[#A8E206] pt-[100px]">
+      <div class="w-[96%] sm:w-[90%] lg:w-[80%] mx-auto">
+        <h1 data-title class="underline text-[50px] text-[#fff] flex justify-center uppercase font-extrabold tracking-widest">
+          Aboute
+        </h1>
+        <div class="flex md:flex-row flex-col-reverse gap-10 items-center py-5  mt-16">
+          <div data-card class="flex-1 card">
+            <article class="py-5">
+              <p class="break-all indent-10">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet deleniti obcaecati necessitatibus repellendus cupiditate, maiores iste? Repudiandae neque vel, quam ut deleniti, provident illum eum doloribus dolorem doloremque, quidem voluptatibus.
+                Alias itaque reiciendis maxime, laboriosam cupiditate iste beatae aliquid ut ea. Debitis eligendi velit repudiandae doloribus, odit, odio ipsum vel dicta labore eum corrupti perspiciatis porro asperiores minima laudantium hic!
+                Dicta nulla, quisquam blanditiis, tempora, hic itaque quasi mollitia non fugit minus distinctio quia perspiciatis odio quod amet ullam! Dolores veniam odio soluta! Assumenda nisi optio distinctio asperiores ut similique!
+                Dignissimos eveniet non blanditiis necessitatibus exercitationem suscipit deserunt aliquid deleniti commodi aliquam eligendi sapiente dolores, nihil quo ad et unde veniam placeat quia accusantium. Unde esse sit dolores tempora temporibus.
+                Eligendi esse, dignissimos amet laborum consequuntur omnis laboriosam illo vel sunt. Consectetur ad distinctio at alias molestiae iure tempora debitis earum officia, in eligendi quis, dolorem adipisci reprehenderit. Laboriosam, eius.
+              </p>
+            </article>
+          </div>
+          <div data-card class="card flex-1 rounded-[50%] overflow-clip shadow-[0px_50px_100px_#fff] bg-gradient-to-b from-[#3366FF] to-[#fff]">
+            <img src="../img/self.png" alt="" class="w-full h-full mx-auto hover:scale-150 transition-all duration-500 cursor-zoom-in">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section>
+    <div id="contact" class="bg-gradient-to-b from-[#A8E206] to-[#6690FF] pt-[100px]">
+  
+      <div class="w-[96%] sm:w-[90%] lg:w-[80%] mx-auto pb-20">
+        <div class="w-[70%] md:w-[40%] mx-auto">
+          <h1 data-title class="text-[50px] text-[#fff] flex justify-center uppercase font-extrabold tracking-widest">
+            Contacts
+          </h1>
+          <p class="text-center text-gray-50 text-sm">
+            Let's contact me now for work or another information
+          </p>
+        </div>
+        <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-10 mt-10">
+          <!-- card contact -->
+          <div data-card class="card shadow-[0px_0px_10px_#fff] p-10 rounded-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-[50px] mx-auto fill-[#fff]">
+              <path d="M504 256C504 119 393 8 256 8S8 119 8 256c0 123.78 90.69 226.38 209.25 245V327.69h-63V256h63v-54.64c0-62.15 37-96.48 93.67-96.48 27.14 0 55.52 4.84 55.52 4.84v61h-31.28c-30.8 0-40.41 19.12-40.41 38.73V256h68.78l-11 71.69h-57.78V501C413.31 482.38 504 379.78 504 256z"/>
+            </svg>
+            <h3 class="uppercase tracking-widest font-semibold text-center mt-5 font-Caveat text-[25px]">
+              facebook
+            </h3>
+            <div class="flex justify-center mt-5">
+              <a href="https://web.facebook.com/Horlenggg/" target="_blank">
+                <button class="w-[100px] py-2 rounded-lg shadow-[0px_0px_5px_#fff] hover:shadow-[0px_0px_50px_#fff] hover:ring-2 hover:ring-[#A9D23A] transition-all duration-500">
+                  Views
+                </button>
+              </a>
+            </div>
+          </div>
+          <!-- email -->
+          <div data-card class="card shadow-[0px_0px_10px_#fff] p-10 rounded-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-[50px] mx-auto fill-[#fff]">
+              <path d="M64 112c-8.8 0-16 7.2-16 16v22.1L220.5 291.7c20.7 17 50.4 17 71.1 0L464 150.1V128c0-8.8-7.2-16-16-16H64zM48 212.2V384c0 8.8 7.2 16 16 16H448c8.8 0 16-7.2 16-16V212.2L322 328.8c-38.4 31.5-93.7 31.5-132 0L48 212.2zM0 128C0 92.7 28.7 64 64 64H448c35.3 0 64 28.7 64 64V384c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V128z"/>
+            </svg>
+            <h3 class="uppercase tracking-widest font-semibold text-center mt-5 font-Caveat text-[25px]">
+              Email
+            </h3>
+            <div class="flex justify-center mt-5">
+              <a href="mailto:horleng123@gmail.com">
+                <button class="w-[100px] py-2 rounded-lg shadow-[0px_0px_5px_#fff] hover:shadow-[0px_0px_50px_#fff] hover:ring-2 hover:ring-[#A9D23A] transition-all duration-500">
+                  Views
+                </button>
+              </a>
+            </div>
+          </div>
+          <!-- telegram -->
+          <div data-card class="card shadow-[0px_0px_10px_#fff] p-10 rounded-lg">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="w-[50px] mx-auto fill-[#fff]">
+              <path d="M248,8C111.033,8,0,119.033,0,256S111.033,504,248,504,496,392.967,496,256,384.967,8,248,8ZM362.952,176.66c-3.732,39.215-19.881,134.378-28.1,178.3-3.476,18.584-10.322,24.816-16.948,25.425-14.4,1.326-25.338-9.517-39.287-18.661-21.827-14.308-34.158-23.215-55.346-37.177-24.485-16.135-8.612-25,5.342-39.5,3.652-3.793,67.107-61.51,68.335-66.746.153-.655.3-3.1-1.154-4.384s-3.59-.849-5.135-.5q-3.283.746-104.608,69.142-14.845,10.194-26.894,9.934c-8.855-.191-25.888-5.006-38.551-9.123-15.531-5.048-27.875-7.717-26.8-16.291q.84-6.7,18.45-13.7,108.446-47.248,144.628-62.3c68.872-28.647,83.183-33.623,92.511-33.789,2.052-.034,6.639.474,9.61,2.885a10.452,10.452,0,0,1,3.53,6.716A43.765,43.765,0,0,1,362.952,176.66Z"/>
+            </svg>
+            <h3 class="uppercase tracking-widest font-semibold text-center mt-5 font-Caveat text-[25px]">
+              Telegram
+            </h3>
+            <div class="flex justify-center mt-5">
+              <a href="https://t.me/Horlenggg" target="_blank">
+                <button class="w-[100px] py-2 rounded-lg shadow-[0px_0px_5px_#fff] hover:shadow-[0px_0px_50px_#fff] hover:ring-2 hover:ring-[#A9D23A] transition-all duration-500">
+                  Views
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </section>
+
+
+  <!-- footer -->
+  <section>
+    <div class="bg-[#6690FF] py-10 shadow-[0px_0px_5px_#fff]">
+      <div class="w-[96%] sm:w-[90%] lg:w-[80%] mx-auto " >
+        <p data-card class="card text-center underline text-blue-600">2023-05-20</p>
+        <div data-card class="card mx-auto w-fit text-[30px] text-[#fff] tracking-[0.2rem] underline">
+          @HorlengLy
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  
+</body>
+</html>

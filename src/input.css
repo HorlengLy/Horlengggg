@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Arimo:wght@600&family=Bokor&family=Caveat:wght@700&family=Chivo+Mono:ital@1&family=Domine:wght@600&family=Koulen&family=Lato:wght@700&family=Lora:ital@1&family=Odor+Mean+Chey&family=Poppins:wght@500&family=Roboto&family=Roboto+Mono:wght@500&family=Schibsted+Grotesk&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    @apply text-gray-200 m-0 p-0 box-border font-Domine
+}
+
+html{
+  scroll-behavior: smooth;
+}
+.right-0{
+  right: 0;
+}
+::-webkit-scrollbar{
+  width: 0;
+}
+.text::after{
+  animation: run 2s steps(12) infinite;
+}
+.list{
+  content: '';
+  position: relative;
+  top: 0;
+  animation: top 8s steps(4) infinite;
+}
+.card:nth-child(odd){
+  opacity: 0;
+}
+.card:nth-child(even){
+  opacity: 0;
+}
+.showTileAnimate{
+  animation: toButtom .5s ease-in forwards;
+}
+.showCardAnimate:nth-child(even){
+  animation: toRight .5s ease-in forwards;
+}
+.showCardAnimate:nth-child(odd){
+  animation: toLeft .5s ease-in forwards;
+}
+@keyframes toButtom{
+  0%{
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes toRight{
+  0%{
+    transform: translateX(-100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes toLeft{
+  0%{
+    transform: translateX(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes run{
+  100%{
+    left: 110%;
+  }
+}
+@keyframes top{
+  100%{
+    top: -320px;
+  }
+}
