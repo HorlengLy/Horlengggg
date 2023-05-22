@@ -60,10 +60,10 @@ module.exports = {
 
       },
       animation:{
-        'leftToRight':'leftToRight 0.2s forwards',
-        'RightToLeft':'RightToLeft 0.2s forwards',
-        'BottomToTop':'BottomToTop 0.2s forwards',
-        'topToButtom':'topToButtom 0.2s forwards',
+        'leftToRight':'leftToRight 0.5s forwards',
+        'RightToLeft':'RightToLeft 0.5s forwards',
+        'BottomToTop':'BottomToTop 0.5s forwards',
+        'topToButtom':'topToButtom 0.5s forwards',
         'toCenter':'toCenter 1s forwards',
       }
     },
