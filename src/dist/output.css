@@ -536,6 +536,10 @@ video {
   position: relative;
 }
 
+.right-0{
+  right: 0px;
+}
+
 .right-6{
   right: 1.5rem;
 }
@@ -679,7 +683,7 @@ video {
 }
 
 .animate-BottomToTop{
-  animation: BottomToTop 2s forwards;
+  animation: BottomToTop 0.2s forwards;
 }
 
 @keyframes RightToLeft{
@@ -695,7 +699,7 @@ video {
 }
 
 .animate-RightToLeft{
-  animation: RightToLeft 2s forwards;
+  animation: RightToLeft 0.2s forwards;
 }
 
 @keyframes leftToRight{
@@ -711,7 +715,7 @@ video {
 }
 
 .animate-leftToRight{
-  animation: leftToRight 2s forwards;
+  animation: leftToRight 0.2s forwards;
 }
 
 @keyframes topToButtom{
@@ -727,7 +731,7 @@ video {
 }
 
 .animate-topToButtom{
-  animation: topToButtom 2s forwards;
+  animation: topToButtom 0.2s forwards;
 }
 
 .cursor-pointer{
@@ -1193,15 +1197,15 @@ html{
 }
 
 .showTileAnimate{
-  animation: toButtom .5s ease-in forwards;
+  animation: toButtom .5s ease-out forwards;
 }
 
 .showCardAnimate:nth-child(even){
-  animation: toRight .5s ease-in forwards;
+  animation: toRight .5s ease-out forwards;
 }
 
 .showCardAnimate:nth-child(odd){
-  animation: toLeft .5s ease-in forwards;
+  animation: toLeft .5s ease-out forwards;
 }
 
 @keyframes toButtom{

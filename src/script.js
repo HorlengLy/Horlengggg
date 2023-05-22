@@ -20,7 +20,7 @@ const observerForCard = new IntersectionObserver(entries=>{
         entry.target.classList.toggle('showCardAnimate',entry.isIntersecting)
     })
 },{
-    threshold:.5
+    threshold:.3
 })
 
 const dataTiles = document.querySelectorAll('[data-title]')

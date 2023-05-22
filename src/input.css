@@ -32,13 +32,13 @@ html{
   opacity: 0;
 }
 .showTileAnimate{
-  animation: toButtom .5s ease-in forwards;
+  animation: toButtom .5s ease-out forwards;
 }
 .showCardAnimate:nth-child(even){
-  animation: toRight .5s ease-in forwards;
+  animation: toRight .5s ease-out forwards;
 }
 .showCardAnimate:nth-child(odd){
-  animation: toLeft .5s ease-in forwards;
+  animation: toLeft .5s ease-out forwards;
 }
 @keyframes toButtom{
   0%{
