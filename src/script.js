@@ -3,7 +3,7 @@ function toggleNav(){
     const userScreen = document.body.offsetWidth
     if(userScreen>768) return
     navbar.classList.toggle('right-[-1000px]')
-    navbar.classList.toggle('right-0')
+    navbar.classList.toggle('right0')
 }
 
 
