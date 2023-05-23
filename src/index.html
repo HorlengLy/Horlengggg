@@ -25,7 +25,7 @@
               <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"/>
             </svg>
           </span>
-          <ul class="flex md:gap-5 md:flex-row flex-col md:h-full h-screen">
+          <ul class="flex md:gap-5 md:flex-row flex-col md:h-full h-screen animate-RightToLeft">
               <a href="#home">
                 <li onclick="toggleNav()" class="tracking-widest cursor-pointer transition-all duration-300  md:py-[6px] py-[10px] px-10 md:px-0 text-[16px] md:hover:bg-transparent md:hover:text-[#7ABE0D] font-semibold hover:bg-[#ADC8FF]">
                   Home
@@ -59,9 +59,9 @@
           </ul>
       </div>
       <!-- nav icon -->
-      <div class="flex-1 md:hidden flex justify-end">
+      <div class="flex-1 md:hidden flex justify-end animate-RightToLeft">
         <span onclick="toggleNav()" class="cursor-pointer">
-          <svg id="nav_icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-[25px] fill-white">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="w-[25px] fill-white">
             <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
           </svg>
         </span>
@@ -75,18 +75,18 @@
         <div class="md:flex-1 flex flex-col items-center z-0">
           <!-- text indroduct -->
           <div class="flex flex-col justify-center text-center">
-              <span data-card class="card text-[50px] animate-leftToRight">
+              <span class="text-[50px] animate-leftToRight">
                 Hello Guy!
               </span>
-              <span data-card class="card text-[30px] animate-RightToLeft">
+              <span class="text-[30px] animate-RightToLeft">
                 Wellcome to my website
               </span>
           </div>
           <div class="flex overflow-clip gap-3 h-[90px] bg-[#44B923] px-2 sm:px-10 rounded-lg shadow-[0px_10px_20px_#fff] md:mt-5 mt-10">
-            <span data-card class="card text-[60px] tracking-wider text-blue-600 animate-topToButtom">
+            <span class="text-[60px] tracking-wider text-blue-600 animate-topToButtom">
               I'm
             </span>
-            <div data-card class="card pt-7 animate-BottomToTop">
+            <div class="pt-7 animate-BottomToTop">
               <ul>
                 <li class="list h-[80px]">
                   <span class="py-1 text relative text-[35px] font-semibold after:content-[''] after:absolute after:h-full after:w-full after:border-l-4 after:left-0 after:bg-[#44B923]">
@@ -114,18 +114,18 @@
           <!-- button -->
           <div class="flex gap-5 mt-28 md:mt-10">
             <a href="../img/Web.pdf" download>
-              <button data-card class="card animate-leftToRight py-3 w-[150px] rounded-lg bg-gradient-to-r text-blue-400 from-[#A9EC5C] to-[#D6E4FF] hover:shadow-[0px_0px_20px_#fff] shadow-[0px_5px_20px_#82E02A] transition-all duration-200">
+              <button class="animate-leftToRight py-3 w-[150px] rounded-lg bg-gradient-to-r text-blue-400 from-[#A9EC5C] to-[#D6E4FF] hover:shadow-[0px_0px_20px_#fff] shadow-[0px_5px_20px_#82E02A] transition-all duration-200">
                 Download CV
               </button>
             </a>
             <a href="#service">
-              <button data-card class="card animate-RightToLeft py-3 w-[150px] rounded-lg bg-gradient-to-r text-blue-400 from-[#A9EC5C] to-[#D6E4FF] hover:shadow-[0px_0px_20px_#fff] shadow-[0px_5px_20px_#82E02A] transition-all duration-200">
+              <button class="animate-RightToLeft py-3 w-[150px] rounded-lg bg-gradient-to-r text-blue-400 from-[#A9EC5C] to-[#D6E4FF] hover:shadow-[0px_0px_20px_#fff] shadow-[0px_5px_20px_#82E02A] transition-all duration-200">
                 Service
               </button>
             </a>
           </div>
         </div>
-        <div  data-card class="card md:flex-1 flex justify-center animate-BottomToTop">
+        <div  class="md:flex-1 flex justify-center animate-BottomToTop">
             <!-- profile picture-->
             <div class="rounded-[50%] bg-[#B3DFFF] md:w-[500px] md:h-[500px] overflow-clip shadow-[0px_0px_30px_#fff]">
                 <img src="./img/self.png" alt="" class="w-full h-full hover:scale-150 cursor-zoom-in transition-all duration-300">
