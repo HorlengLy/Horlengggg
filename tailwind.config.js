@@ -56,6 +56,14 @@ module.exports = {
           '100%':{
             transform:'translateX(0)'
           }
+        },
+        'shadow':{
+          '0%':{
+            opacity:'0'
+          },
+          '100%':{
+            opacity:'1'
+          }
         }
 
       },
@@ -65,6 +73,7 @@ module.exports = {
         'BottomToTop':'BottomToTop 0.5s forwards',
         'topToButtom':'topToButtom 0.5s forwards',
         'toCenter':'toCenter 1s forwards',
+        'shadow':'shadow 2s forwards',
       }
     },
   },
