@@ -34,7 +34,7 @@ module.exports = {
         },
         'BottomToTop':{
           '0%':{
-              transform:'translate(0,100px)',
+              transform:'translate(0,200px)',
               opacity:'0'
           },
           '100%':{
