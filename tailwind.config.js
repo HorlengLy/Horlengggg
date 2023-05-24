@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      boxShadow:{
+        'btnHover':'0 0 5px #03f40f , 0 0 25px #03f40f, 0 0 50px #03f40f, 0 0 100px #03f40f'
+      },
       fontFamily:{
         'Poppins':['Poppins'],
         'roboto':['Roboto'],
